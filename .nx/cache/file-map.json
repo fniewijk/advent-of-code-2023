@@ -1,0 +1,888 @@
+{
+  "version": "6.0",
+  "nxVersion": "17.1.3",
+  "deps": {
+    "chalk": "latest",
+    "ts-aoc-starter": "1.0.4",
+    "@nx/workspace": "17.1.3",
+    "@types/node": "latest",
+    "nx": "17.1.3",
+    "tsx": "latest",
+    "typescript": "latest"
+  },
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "projectFileMap": {
+      "ts-aoc-starter": [
+        {
+          "file": ".DS_Store",
+          "hash": "14351562837877844485"
+        },
+        {
+          "file": ".nx/cache/file-map.json",
+          "hash": "14544352846069479453"
+        },
+        {
+          "file": ".nx/cache/lockfile.hash",
+          "hash": "4547222997468064468"
+        },
+        {
+          "file": ".nx/cache/parsed-lock-file.json",
+          "hash": "17212608564258348788"
+        },
+        {
+          "file": ".nx/cache/project-graph.json",
+          "hash": "3066139177205949142"
+        },
+        {
+          "file": ".nx/cache/run.json",
+          "hash": "5976432093543336144"
+        },
+        {
+          "file": ".nx/cache/terminalOutputs/1147243835092202982",
+          "hash": "12493014405004020775"
+        },
+        {
+          "file": ".nx/cache/terminalOutputs/13707753310203992670",
+          "hash": "10928701178054959104"
+        },
+        {
+          "file": ".nx/cache/terminalOutputs/14129885645385129639",
+          "hash": "10928701178054959104"
+        },
+        {
+          "file": ".nx/cache/terminalOutputs/14838209204638080082",
+          "hash": "15666662138927838846"
+        },
+        {
+          "file": ".nx/cache/terminalOutputs/15774637521717945358",
+          "hash": "8760820727542322295"
+        },
+        {
+          "file": ".nx/cache/terminalOutputs/16016222497829874832",
+          "hash": "15666662138927838846"
+        },
+        {
+          "file": ".nx/cache/terminalOutputs/1638151354184139927",
+          "hash": "8760820727542322295"
+        },
+        {
+          "file": ".nx/cache/terminalOutputs/16657691934700847903",
+          "hash": "10710150308058928044"
+        },
+        {
+          "file": ".nx/cache/terminalOutputs/16796503385885028798",
+          "hash": "4975869919563595159"
+        },
+        {
+          "file": ".nx/cache/terminalOutputs/17933689196905907287",
+          "hash": "6391804382455738658"
+        },
+        {
+          "file": ".nx/cache/terminalOutputs/2043599528052764144",
+          "hash": "5683861765086169434"
+        },
+        {
+          "file": ".nx/cache/terminalOutputs/4673884779122610569",
+          "hash": "11111075356078865371"
+        },
+        {
+          "file": ".nx/cache/terminalOutputs/486671966133426707",
+          "hash": "6250072746893562981"
+        },
+        {
+          "file": ".nx/cache/terminalOutputs/6529295505407265118",
+          "hash": "1605929962308536140"
+        },
+        {
+          "file": "README.md",
+          "hash": "1463336536590849160"
+        },
+        {
+          "file": "package-lock.json",
+          "hash": "14229899483278309818"
+        },
+        {
+          "file": "package.json",
+          "hash": "6427319384767806099",
+          "deps": [
+            "npm:chalk",
+            "npm:ts-aoc-starter",
+            "npm:@nx/workspace",
+            "npm:@types/node",
+            "npm:nx",
+            "npm:tsx",
+            "npm:typescript"
+          ]
+        },
+        {
+          "file": "project.json",
+          "hash": "3269786547924465897"
+        },
+        {
+          "file": "puzzles/day-1/day-1-a.data.txt",
+          "hash": "3186855939493428596"
+        },
+        {
+          "file": "puzzles/day-1/day-1-a.sample-data.txt",
+          "hash": "14298622664929656606"
+        },
+        {
+          "file": "puzzles/day-1/day-1-a.ts",
+          "hash": "1051382939511346037",
+          "deps": [
+            "npm:chalk"
+          ]
+        },
+        {
+          "file": "puzzles/day-1/day-1-b.data.txt",
+          "hash": "3186855939493428596"
+        },
+        {
+          "file": "puzzles/day-1/day-1-b.sample-data.txt",
+          "hash": "7013663448828094157"
+        },
+        {
+          "file": "puzzles/day-1/day-1-b.ts",
+          "hash": "10117233295429607935",
+          "deps": [
+            "npm:chalk"
+          ]
+        },
+        {
+          "file": "puzzles/day-10/day-10-a.data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-10/day-10-a.sample-data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-10/day-10-a.ts",
+          "hash": "1293363276936474959",
+          "deps": [
+            "npm:chalk"
+          ]
+        },
+        {
+          "file": "puzzles/day-10/day-10-b.data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-10/day-10-b.sample-data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-10/day-10-b.ts",
+          "hash": "5388127857932606441",
+          "deps": [
+            "npm:chalk"
+          ]
+        },
+        {
+          "file": "puzzles/day-11/day-11-a.data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-11/day-11-a.sample-data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-11/day-11-a.ts",
+          "hash": "12100919309416293179",
+          "deps": [
+            "npm:chalk"
+          ]
+        },
+        {
+          "file": "puzzles/day-11/day-11-b.data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-11/day-11-b.sample-data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-11/day-11-b.ts",
+          "hash": "11066302010248104871",
+          "deps": [
+            "npm:chalk"
+          ]
+        },
+        {
+          "file": "puzzles/day-12/day-12-a.data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-12/day-12-a.sample-data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-12/day-12-a.ts",
+          "hash": "1694519071775959409",
+          "deps": [
+            "npm:chalk"
+          ]
+        },
+        {
+          "file": "puzzles/day-12/day-12-b.data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-12/day-12-b.sample-data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-12/day-12-b.ts",
+          "hash": "12704426270967523675",
+          "deps": [
+            "npm:chalk"
+          ]
+        },
+        {
+          "file": "puzzles/day-13/day-13-a.data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-13/day-13-a.sample-data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-13/day-13-a.ts",
+          "hash": "11767132642337973833",
+          "deps": [
+            "npm:chalk"
+          ]
+        },
+        {
+          "file": "puzzles/day-13/day-13-b.data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-13/day-13-b.sample-data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-13/day-13-b.ts",
+          "hash": "5049513962411079516",
+          "deps": [
+            "npm:chalk"
+          ]
+        },
+        {
+          "file": "puzzles/day-14/day-14-a.data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-14/day-14-a.sample-data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-14/day-14-a.ts",
+          "hash": "15401783928819789757",
+          "deps": [
+            "npm:chalk"
+          ]
+        },
+        {
+          "file": "puzzles/day-14/day-14-b.data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-14/day-14-b.sample-data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-14/day-14-b.ts",
+          "hash": "16969615843808327264",
+          "deps": [
+            "npm:chalk"
+          ]
+        },
+        {
+          "file": "puzzles/day-15/day-15-a.data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-15/day-15-a.sample-data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-15/day-15-a.ts",
+          "hash": "9706691266809978099",
+          "deps": [
+            "npm:chalk"
+          ]
+        },
+        {
+          "file": "puzzles/day-15/day-15-b.data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-15/day-15-b.sample-data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-15/day-15-b.ts",
+          "hash": "9249822368159863506",
+          "deps": [
+            "npm:chalk"
+          ]
+        },
+        {
+          "file": "puzzles/day-16/day-16-a.data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-16/day-16-a.sample-data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-16/day-16-a.ts",
+          "hash": "7658643588466535308",
+          "deps": [
+            "npm:chalk"
+          ]
+        },
+        {
+          "file": "puzzles/day-16/day-16-b.data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-16/day-16-b.sample-data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-16/day-16-b.ts",
+          "hash": "9502886576066786948",
+          "deps": [
+            "npm:chalk"
+          ]
+        },
+        {
+          "file": "puzzles/day-17/day-17-a.data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-17/day-17-a.sample-data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-17/day-17-a.ts",
+          "hash": "5106554595751489634",
+          "deps": [
+            "npm:chalk"
+          ]
+        },
+        {
+          "file": "puzzles/day-17/day-17-b.data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-17/day-17-b.sample-data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-17/day-17-b.ts",
+          "hash": "1368680668097102110",
+          "deps": [
+            "npm:chalk"
+          ]
+        },
+        {
+          "file": "puzzles/day-18/day-18-a.data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-18/day-18-a.sample-data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-18/day-18-a.ts",
+          "hash": "13182324932052651819",
+          "deps": [
+            "npm:chalk"
+          ]
+        },
+        {
+          "file": "puzzles/day-18/day-18-b.data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-18/day-18-b.sample-data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-18/day-18-b.ts",
+          "hash": "13822836208714204948",
+          "deps": [
+            "npm:chalk"
+          ]
+        },
+        {
+          "file": "puzzles/day-19/day-19-a.data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-19/day-19-a.sample-data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-19/day-19-a.ts",
+          "hash": "17427800519859730033",
+          "deps": [
+            "npm:chalk"
+          ]
+        },
+        {
+          "file": "puzzles/day-19/day-19-b.data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-19/day-19-b.sample-data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-19/day-19-b.ts",
+          "hash": "7620462010447784823",
+          "deps": [
+            "npm:chalk"
+          ]
+        },
+        {
+          "file": "puzzles/day-2/day-2-a.data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-2/day-2-a.sample-data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-2/day-2-a.ts",
+          "hash": "5936516520692825814",
+          "deps": [
+            "npm:chalk"
+          ]
+        },
+        {
+          "file": "puzzles/day-2/day-2-b.data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-2/day-2-b.sample-data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-2/day-2-b.ts",
+          "hash": "17599138505537838214",
+          "deps": [
+            "npm:chalk"
+          ]
+        },
+        {
+          "file": "puzzles/day-20/day-20-a.data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-20/day-20-a.sample-data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-20/day-20-a.ts",
+          "hash": "13744955925923463151",
+          "deps": [
+            "npm:chalk"
+          ]
+        },
+        {
+          "file": "puzzles/day-20/day-20-b.data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-20/day-20-b.sample-data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-20/day-20-b.ts",
+          "hash": "6096882294024180655",
+          "deps": [
+            "npm:chalk"
+          ]
+        },
+        {
+          "file": "puzzles/day-21/day-21-a.data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-21/day-21-a.sample-data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-21/day-21-a.ts",
+          "hash": "13550609562460872150",
+          "deps": [
+            "npm:chalk"
+          ]
+        },
+        {
+          "file": "puzzles/day-21/day-21-b.data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-21/day-21-b.sample-data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-21/day-21-b.ts",
+          "hash": "1679118211072002122",
+          "deps": [
+            "npm:chalk"
+          ]
+        },
+        {
+          "file": "puzzles/day-22/day-22-a.data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-22/day-22-a.sample-data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-22/day-22-a.ts",
+          "hash": "4962202605245782374",
+          "deps": [
+            "npm:chalk"
+          ]
+        },
+        {
+          "file": "puzzles/day-22/day-22-b.data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-22/day-22-b.sample-data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-22/day-22-b.ts",
+          "hash": "10299928295952840022",
+          "deps": [
+            "npm:chalk"
+          ]
+        },
+        {
+          "file": "puzzles/day-23/day-23-a.data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-23/day-23-a.sample-data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-23/day-23-a.ts",
+          "hash": "4498462556635463017",
+          "deps": [
+            "npm:chalk"
+          ]
+        },
+        {
+          "file": "puzzles/day-23/day-23-b.data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-23/day-23-b.sample-data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-23/day-23-b.ts",
+          "hash": "10791990899213865484",
+          "deps": [
+            "npm:chalk"
+          ]
+        },
+        {
+          "file": "puzzles/day-24/day-24-a.data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-24/day-24-a.sample-data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-24/day-24-a.ts",
+          "hash": "18322859107992663799",
+          "deps": [
+            "npm:chalk"
+          ]
+        },
+        {
+          "file": "puzzles/day-24/day-24-b.data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-24/day-24-b.sample-data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-24/day-24-b.ts",
+          "hash": "3052445463135599684",
+          "deps": [
+            "npm:chalk"
+          ]
+        },
+        {
+          "file": "puzzles/day-25/day-25-a.data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-25/day-25-a.sample-data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-25/day-25-a.ts",
+          "hash": "4229426904734972965",
+          "deps": [
+            "npm:chalk"
+          ]
+        },
+        {
+          "file": "puzzles/day-25/day-25-b.data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-25/day-25-b.sample-data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-25/day-25-b.ts",
+          "hash": "8695602438528414256",
+          "deps": [
+            "npm:chalk"
+          ]
+        },
+        {
+          "file": "puzzles/day-3/day-3-a.data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-3/day-3-a.sample-data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-3/day-3-a.ts",
+          "hash": "3911402931107951861",
+          "deps": [
+            "npm:chalk"
+          ]
+        },
+        {
+          "file": "puzzles/day-3/day-3-b.data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-3/day-3-b.sample-data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-3/day-3-b.ts",
+          "hash": "4434740379007944799",
+          "deps": [
+            "npm:chalk"
+          ]
+        },
+        {
+          "file": "puzzles/day-4/day-4-a.data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-4/day-4-a.sample-data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-4/day-4-a.ts",
+          "hash": "3587397567533991856",
+          "deps": [
+            "npm:chalk"
+          ]
+        },
+        {
+          "file": "puzzles/day-4/day-4-b.data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-4/day-4-b.sample-data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-4/day-4-b.ts",
+          "hash": "3286853755849758540",
+          "deps": [
+            "npm:chalk"
+          ]
+        },
+        {
+          "file": "puzzles/day-5/day-5-a.data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-5/day-5-a.sample-data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-5/day-5-a.ts",
+          "hash": "2576002266287982264",
+          "deps": [
+            "npm:chalk"
+          ]
+        },
+        {
+          "file": "puzzles/day-5/day-5-b.data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-5/day-5-b.sample-data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-5/day-5-b.ts",
+          "hash": "11089515356417423551",
+          "deps": [
+            "npm:chalk"
+          ]
+        },
+        {
+          "file": "puzzles/day-6/day-6-a.data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-6/day-6-a.sample-data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-6/day-6-a.ts",
+          "hash": "14012459857578493273",
+          "deps": [
+            "npm:chalk"
+          ]
+        },
+        {
+          "file": "puzzles/day-6/day-6-b.data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-6/day-6-b.sample-data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-6/day-6-b.ts",
+          "hash": "1512149760727473322",
+          "deps": [
+            "npm:chalk"
+          ]
+        },
+        {
+          "file": "puzzles/day-7/day-7-a.data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-7/day-7-a.sample-data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-7/day-7-a.ts",
+          "hash": "83078160871189367",
+          "deps": [
+            "npm:chalk"
+          ]
+        },
+        {
+          "file": "puzzles/day-7/day-7-b.data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-7/day-7-b.sample-data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-7/day-7-b.ts",
+          "hash": "18046501343144239210",
+          "deps": [
+            "npm:chalk"
+          ]
+        },
+        {
+          "file": "puzzles/day-8/day-8-a.data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-8/day-8-a.sample-data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-8/day-8-a.ts",
+          "hash": "842038890299206841",
+          "deps": [
+            "npm:chalk"
+          ]
+        },
+        {
+          "file": "puzzles/day-8/day-8-b.data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-8/day-8-b.sample-data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-8/day-8-b.ts",
+          "hash": "14737991406149090365",
+          "deps": [
+            "npm:chalk"
+          ]
+        },
+        {
+          "file": "puzzles/day-9/day-9-a.data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-9/day-9-a.sample-data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-9/day-9-a.ts",
+          "hash": "4341814178112176132",
+          "deps": [
+            "npm:chalk"
+          ]
+        },
+        {
+          "file": "puzzles/day-9/day-9-b.data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-9/day-9-b.sample-data.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "puzzles/day-9/day-9-b.ts",
+          "hash": "14871530697684947321",
+          "deps": [
+            "npm:chalk"
+          ]
+        },
+        {
+          "file": "shared.ts",
+          "hash": "2649293316619015952",
+          "deps": [
+            "npm:fs/promises"
+          ]
+        },
+        {
+          "file": "tsconfig.json",
+          "hash": "2694175406669169334"
+        }
+      ]
+    },
+    "nonProjectFiles": []
+  }
+}
