@@ -11,7 +11,7 @@ export async function day4a(dataPath?: string) {
     const numbers = gameResult.split(' | ');
 
     const winningNumbers = numbers[0].split(' ').filter((number) => number !== '');
-    const myNumbers = numbers[1].split(' ').filter((number) => number !== '');;
+    const myNumbers = numbers[1].split(' ').filter((number) => number !== '');
 
     const myWinningNumbers = myNumbers.filter((number) => winningNumbers.includes(number));
 
