@@ -1,10 +1,41 @@
 import { readData } from '../../shared.ts';
 import chalk from 'chalk';
 
-export async function day6b(dataPath?: string) {
-  const data = await readData(dataPath);
-  return 0;
+function isNumeric(value) {
+  return /^\d+$/.test(value);
 }
 
-const answer = await day6b();
+export async function day6a(dataPath?: string) {
+  const data = await readData(dataPath);
+
+  const times = data[0].split(' ').filter((value) => isNumeric(value));
+  const distances = data[1].split(' ').filter((value) => isNumeric(value));
+
+  const time = parseInt(times.join(''));
+  const distance = parseInt(distances.join(''));
+
+  const occurences = calculateOccurrencesBelowLimit(time, distance);
+  console.log(occurences);
+
+  return occurences;
+}
+
+const calculateOccurrencesBelowLimit = (time: number, limit: number): number => {
+  let occurences = 0;
+  let speed = Math.floor(time / 2);
+  let chargeTime = Math.ceil(time / 2);
+
+  while (speed * chargeTime > limit) {
+    occurences++;
+    chargeTime++;
+    speed--;
+  }
+  occurences *= 2;
+  if (time % 2 === 0) {
+    occurences--;
+  };
+  return occurences;
+}
+
+const answer = await day6a();
 console.log(chalk.bgGreen('Your Answer:'), chalk.green(answer));
