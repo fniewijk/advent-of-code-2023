@@ -15,8 +15,6 @@ export async function day6a(dataPath?: string) {
   const distance = parseInt(distances.join(''));
 
   const occurences = calculateOccurrencesBelowLimit(time, distance);
-  console.log(occurences);
-
   return occurences;
 }
 
@@ -37,5 +35,7 @@ const calculateOccurrencesBelowLimit = (time: number, limit: number): number => 
   return occurences;
 }
 
+const now = performance.now();
 const answer = await day6a();
 console.log(chalk.bgGreen('Your Answer:'), chalk.green(answer));
+console.log(chalk.bgGrey(`Time spent calculating:`), chalk.grey(`${Math.floor(performance.now() - now)}ms`));
