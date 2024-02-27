@@ -1,7 +1,7 @@
 import { readData } from '../../shared.ts';
 import chalk from 'chalk';
 
-const pipeMapping = {
+const pipeMapping: { [key: string]: number[]} = {
   '|': [1,1,0,0],
   '-': [0,0,1,1],
   'L': [1,0,0,1],
@@ -45,44 +45,46 @@ const getNextCoordinates = (x: number, y: number, direction: number) => {
   }
 }
 
-const recursiveFinder = (x: number, y: number, prevDirection: number, data: string[], stepCount: number = 0) => {
-  console.log('x', x, 'y', y, 'prevDirection', prevDirection, 'stepCount', stepCount);
-
-  const { pipeMap, pipe } = getPipeMapFromData(x, y, data);
-
-  // we looped around
-  if (pipe === 'S' && stepCount > 0) {
-    return stepCount;
-  }
-
-  // if you are not allowed to come from where you come then return -1.
-  if (pipeMap[prevDirection] === 0) {
-    return -1;
-  }
-
-  const nextDirections = [];
-  pipeMap.forEach((allowed, index) => {
-    if (allowed === 1 && prevDirection !== index) {
-      nextDirections.push(index);
-    }
-  });
-
-  console.log('nextDirections', nextDirections);
-
-  return nextDirections.reduce((prev, nextDirection) => {
-    const nextCoordinates = getNextCoordinates(x, y, nextDirection);
-    const newPrevDirection = nextDirection === 0 ? 1 : nextDirection === 1 ? 0 : nextDirection === 2 ? 3 : 2;
-    return Math.max(prev, recursiveFinder(nextCoordinates.x, nextCoordinates.y, newPrevDirection, data, stepCount + 1));
-  }, -1);
+const getPreviousDirection = (direction: number) => {
+  return direction === 0 ? 1 : direction === 1 ? 0 : direction === 2 ? 3 : 2;
 }
 
 export async function day10a(dataPath?: string) {
   const data = await readData(dataPath);
   const { x, y } = findAnimalCoordinates(data);
 
-  const stepCount = recursiveFinder(x, y, -1, data);
+  const getAllNextCoordinates = pipeMapping['S'].map((allowed, index) => {
+    return getNextCoordinates(x, y, index);
+  });
 
-  console.log('animalX', x, 'animalY', y);
+  let nextDirection: number = -1;
+  let nextCoordinates = getAllNextCoordinates.find(({ x, y }, index) => {
+    const { pipeMap, pipe } = getPipeMapFromData(x, y, data);
+    if (pipeMap[getPreviousDirection(index)] === 0) {
+      return false;
+    }
+    nextDirection = index;
+    return true;
+  });
+
+
+  let stepCount = 1;
+  let pipe = getPipeMapFromData(nextCoordinates.x, nextCoordinates.y, data).pipe;
+  while(pipe !== 'S') {
+
+    // next direction is the direction in the pipe that is not the same as the previous direction
+    nextDirection = pipeMapping[pipe].findIndex((allowed, index) => allowed === 1 && index !== getPreviousDirection(nextDirection));
+    console.log('nextDirection', nextDirection);
+
+    nextCoordinates = getNextCoordinates(nextCoordinates.x, nextCoordinates.y, nextDirection);
+    console.log('nextCoordinates', nextCoordinates);
+
+    pipe = getPipeMapFromData(nextCoordinates.x, nextCoordinates.y, data).pipe;
+
+    console.log('pipe', pipe, 'nextDirection', nextDirection);
+    stepCount++;
+  }
+
 
   return stepCount / 2;
 }
