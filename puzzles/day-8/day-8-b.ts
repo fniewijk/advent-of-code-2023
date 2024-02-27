@@ -57,7 +57,6 @@ export async function day8b(dataPath?: string) {
 
     return { ...prev, [key]: { L, R } };
   }, {});
-  let instructionIndex = 0;
   // console.log('lastKey', currentMap, maps['lastKey']);
 
   console.log('activeMaps', activeMaps);
