@@ -53,10 +53,12 @@ export async function day10a(dataPath?: string) {
   const data = await readData(dataPath);
   const { x, y } = findAnimalCoordinates(data);
 
+  // get coordinates around animal position
   const getAllNextCoordinates = pipeMapping['S'].map((allowed, index) => {
     return getNextCoordinates(x, y, index);
   });
 
+  // get the first step to take.
   let nextDirection: number = -1;
   let nextCoordinates = getAllNextCoordinates.find(({ x, y }, index) => {
     const { pipeMap, pipe } = getPipeMapFromData(x, y, data);
@@ -84,7 +86,6 @@ export async function day10a(dataPath?: string) {
     console.log('pipe', pipe, 'nextDirection', nextDirection);
     stepCount++;
   }
-
 
   return stepCount / 2;
 }
