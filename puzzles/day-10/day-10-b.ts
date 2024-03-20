@@ -105,10 +105,7 @@ export async function day10b(dataPath?: string) {
   }
   totalArea = Math.abs(totalArea) * 0.5;
 
-
   console.log('totalArea', Math.floor(totalArea), 'outerPoints', outerPoints);
-
-  // const area = Math.abs(innerPoints) + (outerPoints / 2) - 1;
 
   const innerPoints = Math.floor(totalArea) - (outerPoints / 2) + 1;
 
